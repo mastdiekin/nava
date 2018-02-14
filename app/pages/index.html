@@ -1,0 +1,430 @@
+---
+title: nava
+---
+{% extends "app/pages/layout/_main.html" %}
+
+
+{% block content %}
+
+<!-- begin hero -->
+<header class="hero">
+	<div class="hero__slider">
+		<div class="hero__item" style="background-image: url('images/hero1.jpg');"></div>
+		<div class="hero__item" style="background-image: url('images/hero2.jpg');"></div>
+	</div>
+	<div class="hero__topline">
+		<a href="#" class="hero__logo">
+			{{mixins.svg('hero-logo')}}
+		</a>
+		<nav>
+			<ul class="hero__menu">
+				<li><a href="#">Top destibations</a></li>
+				<li><a href="#">Add your boat</a></li>
+				<li><a href="#" class="sign__up">Sign up</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- begin container -->
+	<div class="container">
+		<!-- begin row -->
+		<div class="row d-flex align-items-center">
+			<div class="hero__info">
+				<div class="section__title">
+					Reserve a boat now!
+				</div>
+				<div class="section__desc">
+					And set your sails into paradise!
+				</div>
+				<div class="hero__form">
+					<form action="#">
+						<input type="text" class="hero__input" placeholder="What is your destination sailor?">
+						<button type="submit" class="hero__button">Find a boat</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+	<div class="hero__bottomline">
+		<!-- begin container -->
+		<div class="container">
+			<!-- begin row -->
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="hero__bottomline-item">
+						<div class="item__title">
+							2,300
+						</div>
+						<div class="item__desc">
+							Destinations
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="hero__bottomline-item">
+						<div class="item__title">
+							1,000
+						</div>
+						<div class="item__desc">
+							Cities
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="hero__bottomline-item">
+						<div class="item__title">
+							35,000
+						</div>
+						<div class="item__desc">
+							Boats
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="hero__bottomline-item">
+						<div class="item__title">
+							50,000
+						</div>
+						<div class="item__desc">
+							Sailors
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end container -->
+	</div>
+</header>
+<!-- end hero -->
+<!-- begin explore -->
+<section class="explore">
+	<!-- begin container -->
+	<div class="container">
+		<!-- begin row -->
+		<div class="row">
+			<div class="col">
+				<div class="main__title">
+					Explore out top destinations
+				</div>
+				<div class="main__desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sunt.
+				</div>
+			</div>
+		</div>
+		<!-- end row -->
+		<!-- begin row -->
+		<div class="row">
+			<div class="col-lg-8 col-md-12">
+				<!-- begin explore__item -->
+				<a href="#" class="explore__item" style="background-image: url('images/explore1.jpg');">
+					<div class="explore__label">
+						730
+					</div>
+					<div class="explore__info">
+						<div class="explore__title">
+							Figueira da Foz
+						</div>
+						<div class="explore__city">
+							Portugal
+						</div>
+					</div>
+				</a>
+				<!-- end explore__item -->
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- begin explore__item -->
+				<a href="#" class="explore__item" style="background-image: url('images/explore1.jpg');">
+					<div class="explore__label">
+						730
+					</div>
+					<div class="explore__info">
+						<div class="explore__title">
+							Figueira da Foz
+						</div>
+						<div class="explore__city">
+							Portugal
+						</div>
+					</div>
+				</a>
+				<!-- end explore__item -->
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- begin explore__item -->
+				<a href="#" class="explore__item" style="background-image: url('images/explore1.jpg');">
+					<div class="explore__label">
+						730
+					</div>
+					<div class="explore__info">
+						<div class="explore__title">
+							Figueira da Foz
+						</div>
+						<div class="explore__city">
+							Portugal
+						</div>
+					</div>
+				</a>
+				<!-- end explore__item -->
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- begin explore__item -->
+				<a href="#" class="explore__item" style="background-image: url('images/explore1.jpg');">
+					<div class="explore__label">
+						730
+					</div>
+					<div class="explore__info">
+						<div class="explore__title">
+							Figueira da Foz
+						</div>
+						<div class="explore__city">
+							Portugal
+						</div>
+					</div>
+				</a>
+				<!-- end explore__item -->
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- begin explore__item -->
+				<a href="#" class="explore__item" style="background-image: url('images/explore1.jpg');">
+					<div class="explore__label">
+						730
+					</div>
+					<div class="explore__info">
+						<div class="explore__title">
+							Figueira da Foz
+						</div>
+						<div class="explore__city">
+							Portugal
+						</div>
+					</div>
+				</a>
+				<!-- end explore__item -->
+			</div>
+		</div>
+		<!-- end row -->
+		<!-- begin row -->
+		<div class="row">
+			<div class="col">
+				<a href="#" class="btn center btn__inline btn__transparent">Explore more destinations</a>
+			</div>
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+</section>
+<!-- end explore -->
+<!-- begin avd -->
+<section class="avd" style="background-image: url('images/avd.jpg');">
+	<!-- begin container -->
+	<div class="container">
+		<!-- begin row -->
+		<div class="row">
+			<div class="col d-flex align-items-center justify-content-center">
+				<div class="avd__info">
+					<div class="section__title">
+						Have your own boat?
+					</div>
+					<div class="section__desc">
+						And set your sails into paradise!
+					</div>
+					<a href="#" class="btn center btn__inline btn__fill">Make money with your boat</a>
+				</div>
+			</div>
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+</section>
+<!-- end avd -->
+<!-- begin portfolio -->
+<section class="portfolio">
+	<!-- begin container -->
+	<div class="container">
+		<!-- begin row -->
+		<div class="row">
+			<div class="col">
+				<div class="main__title">
+					Explore out top destinations
+				</div>
+				<div class="main__desc">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sunt.
+				</div>
+			</div>
+		</div>
+		<!-- end row -->
+		<!-- begin row -->
+		<div class="row">
+			<div class="col-sm-6">
+				<!-- begin portfolio__item -->
+				<a href="#" class="portfolio__item" style="background-image: url('images/portfolio1.jpg');">
+					<div class="portfolio__label">
+						€580 / day
+					</div>
+					<div class="portfolio__info">
+						<div class="portfolio__title">
+							Delphia 47
+						</div>
+						<div class="portfolio__sub">
+							<div class="portfolio__city">
+								<span class="icon">{{mixins.svg('map')}}</span>Gdansk, Poland
+							</div>
+							<div class="portfolio__people">
+								<span class="icon">{{mixins.svg('account')}}</span>8 Berths
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end portfolio__item -->
+			</div>
+			<div class="col-sm-6">
+				<!-- begin portfolio__item -->
+				<a href="#" class="portfolio__item" style="background-image: url('images/portfolio2.jpg');">
+					<div class="portfolio__label">
+						€580 / day
+					</div>
+					<div class="portfolio__info">
+						<div class="portfolio__title">
+							Delphia 47
+						</div>
+						<div class="portfolio__sub">
+							<div class="portfolio__city">
+								<span class="icon">{{mixins.svg('map')}}</span>Gdansk, Poland
+							</div>
+							<div class="portfolio__people">
+								<span class="icon">{{mixins.svg('account')}}</span>8 Berths
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end portfolio__item -->
+			</div>
+			<div class="col-sm-6">
+				<!-- begin portfolio__item -->
+				<a href="#" class="portfolio__item" style="background-image: url('images/portfolio3.jpg');">
+					<div class="portfolio__label">
+						€580 / day
+					</div>
+					<div class="portfolio__info">
+						<div class="portfolio__title">
+							Delphia 47
+						</div>
+						<div class="portfolio__sub">
+							<div class="portfolio__city">
+								<span class="icon">{{mixins.svg('map')}}</span>Gdansk, Poland
+							</div>
+							<div class="portfolio__people">
+								<span class="icon">{{mixins.svg('account')}}</span>8 Berths
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end portfolio__item -->
+			</div>
+			<div class="col-sm-6">
+				<!-- begin portfolio__item -->
+				<a href="#" class="portfolio__item" style="background-image: url('images/portfolio4.jpg');">
+					<div class="portfolio__label">
+						€580 / day
+					</div>
+					<div class="portfolio__info">
+						<div class="portfolio__title">
+							Delphia 47
+						</div>
+						<div class="portfolio__sub">
+							<div class="portfolio__city">
+								<span class="icon">{{mixins.svg('map')}}</span>Gdansk, Poland
+							</div>
+							<div class="portfolio__people">
+								<span class="icon">{{mixins.svg('account')}}</span>8 Berths
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end portfolio__item -->
+			</div>
+		</div>
+		<!-- end row -->
+		<!-- begin row -->
+		<div class="row">
+			<div class="col">
+				<a href="#" class="btn center btn__inline btn__transparent">Load more boats</a>
+			</div>
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+</section>
+<!-- end portfolio -->
+<!-- begin footer -->
+<footer class="footer">
+	<!-- begin container -->
+	<div class="container">
+		<!-- begin row -->
+		<div class="row">
+			<div class="col-md-3 col-sm-12">
+				<ul class="footer__menu">
+					<li>
+						<span class="footer__title">
+							Top locations
+						</span>
+					</li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<ul class="footer__menu">
+					<li>
+						<span class="footer__title">
+							Featured boats
+						</span>
+					</li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<span class="footer__title">
+					Subscribe to our newsletter
+				</span>
+				<div class="footer__form">
+					<form action="#">
+						<input type="text" class="footer__input" placeholder="Your email adress">
+						<button type="submit" class="footer__button">
+							Subscribe
+						</button>
+					</form>
+				</div>
+				<ul class="footer__social">
+					<li><a class="facebook" href="#">{{mixins.svg('facebook')}}</a></li>
+					<li><a class="twitter" href="#">{{mixins.svg('twitter')}}</a></li>
+					<li><a class="g-plus" href="#">{{mixins.svg('g-plus')}}</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<ul class="footer__menu">
+					<li>
+						<span class="footer__title">
+							Contact us
+						</span>
+					</li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+					<li><a href="#">Lorem ipsum dolor.</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+</footer>
+<!-- end footer -->
+{% endblock %}

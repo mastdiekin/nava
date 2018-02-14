@@ -1,0 +1,468 @@
+ul
+	margin: 0
+	padding: 0
+
+a
+	color: #343435
+	text-decoration: none
+	&:hover
+		color: $main
+
+.hero
+	height: 90vh
+	min-height: 700px
+	+pr
+	>
+		.container
+			+pr
+			z-index: 1
+			height: 100%
+			>
+				.row
+					height: 100%
+	&__item
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 0
+		+pr
+		height: 90vh !important
+		min-height: 700px !important
+		background-color: $b
+		&:before
+			+c
+			+pa
+			width: 100%
+			height: 100%
+			background: rgba($b, .6)
+	&__slider
+		+pa
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+	&__topline
+		max-width: 1500px
+		margin: 0 auto
+		+df
+		justify-content: space-between
+		padding-top: 
+		padding: 36px 15px 0
+		+pr
+		z-index: 1
+	&__logo
+		display: block
+		width: 150px
+		height: 50px
+		+pr
+		top: 5px
+		svg
+			width: 166px
+			height: 32px
+			.cls-4
+				fill: $w !important
+			.cls-3
+				fill: $main !important
+	&__menu
+		+clr
+		+df
+		align-items: center
+		li
+			float: left
+			margin-left: 50px
+			+r(769)
+				display: none
+				&:last-child
+					display: block
+			&:first-child
+				margin-left: 0
+			a
+				display: block
+				+ralb
+				color: $w
+				text-transform: uppercase
+				&:hover,
+				&.is-active
+					color: $main
+	&__bottomline
+		+pa
+		z-index: 1
+		bottom: -70px
+		left: 0
+		right: 0
+		>
+			.container
+				>
+					.row
+						background: $w
+						border-radius: 5px
+						box-shadow: 0 0 30px rgba(52, 52, 52, 0.15)
+						margin: 0
+						>
+							.col-sm-3
+								&:first-child
+									>
+										.hero__bottomline-item
+											&:before
+												display: none
+		+r(769)
+			display: none
+		&-item
+			text-align: center
+			padding: 40px 0
+			+pr
+			&:before
+				+c
+				+pa
+				width: 1px
+				height: 80px
+				background: #717171
+				left: 0
+				top: 50%
+				transform: translate(0, -50%)
+			>
+				.item__title
+					+sansb
+					font-size: 30px
+				.item__desc
+					font-size: 18px
+	&__info
+		width: 100%
+		transform: translate(0, -40%)
+		text-align: center
+	&__form
+		margin-top: 90px
+		+df
+		+cc
+		+clr
+		*
+			float: left
+			+r(1200)
+				float: none
+		input
+			width: 769px
+			height: 60px
+			border-radius: 5px 0 0 5px
+			border: 0
+			background: $w
+			padding: 0 30px
+			line-height: 60px
+			outline: none
+			+placeholder
+				text-transform: uppercase
+			+r(1200)
+				border-radius: 5px
+				margin-bottom: 15px
+				+placeholder
+					text-align: center
+			+r(992)
+				width: 100%
+				height: 40px
+				line-height: 40px
+		button
+			text-transform: uppercase
+			color: $w
+			cursor: pointer
+			outline: none
+			border: 0
+			border-radius: 0 5px 5px 0
+			height: 60px
+			width: 200px
+			line-height: 60px
+			background: $main
+			text-align: center
+			+pr
+			&:before
+				+c
+				+pa
+				+sprite($boat)
+				top: 50%
+				left: 35px
+				transform: translate(0, -50%)
+			+r(1200)
+				border-radius: 5px
+			+r(992)
+				height: 40px
+				line-height: 40px
+
+	.sign__up
+		+r(420)
+			display: none
+
+.section
+	&__title
+		text-transform: uppercase
+		color: $w
+		font-size: 72px
+		+lh(72, 72)
+		+ralb
+		text-align: center
+		+r(992)
+			font-size: 40px
+	&__desc
+		color: $w
+		+sans
+		font-size: 30px
+		text-align: center
+		+r(992)
+			font-size: 15px
+.sign__up
+	height: 42px
+	width: 146px
+	line-height: 42px
+	text-align: center
+	border: 1px solid $w
+	border-radius: 5px
+	&:hover
+		background: $w
+		color: $main
+		border-color: $w
+
+section
+	padding: $section-padding 0
+
+.main
+	&__title
+		font-size: 30px
+		+lsPX(40, 30)
+		text-transform: uppercase
+		+ral
+		text-align: center
+		margin-bottom: 10px
+	&__desc
+		+lsPX(20, 16)
+		text-align: center
+		margin-bottom: 86px
+
+.explore
+	padding: $section-padding*1.5 0 $section-padding
+	&__item
+		min-height: 360px
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		border-radius: 5px
+		+pr
+		display: block
+		padding: 24px
+		color: $w
+		overflow: hidden
+		margin-bottom: $margin-item
+		&:before
+			+c
+			+pa
+			width: 100%
+			height: 50%
+			bottom: 0
+			left: 0
+			background-image: linear-gradient(to top, black 0%, transparent 100%)
+			border-radius: 0 0 5px 5px
+	&__label
+		background: $main
+		display: inline-block
+		padding: 8px
+		border-radius: 5px
+		min-width: 82px
+		text-align: center
+		+pr
+		color: $w
+		&:before
+			+c
+			+pr
+			display: inline-block
+			+sprite($boat)
+	&__info
+		+pa
+		bottom: 24px
+		left: 24px
+		+ral
+	&__title
+		font-size: 30px
+		margin-bottom: 5px
+	&__city
+		font-size: 20px
+
+.btn
+	display: block
+	text-align: center
+	text-transform: uppercase
+	height: 60px
+	line-height: 60px
+	border-radius: 5px
+	&.center
+		margin: 0 auto
+	&__inline
+		display: inline-block
+		min-width: 320px
+		+r(350)
+			width: 100%
+			min-width: auto
+		&.center
+			+pr
+			left: 50%
+			transform: translate(-50%, 0)
+	&__fill
+		background: $main
+		color: $w
+		&:hover
+			color: $w
+	&__transparent
+		background-color: transparent
+		color: $b
+		border: 1px solid $b
+		&:hover
+			color: $b
+
+.avd
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	+pr
+	height: 60vh
+	min-height: 600px
+	&:before
+		+c
+		+pa
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: $b
+		opacity: .6
+	>
+		.container
+			height: 100%
+			>
+				.row
+					height: 100%
+	.section__desc
+		margin-bottom: 90px
+
+.portfolio
+	&__item
+		@extend .explore__item
+		&:hover
+			color: $w
+	&__label
+		@extend .explore__label
+		&:before
+			display: none
+	&__info
+		@extend .explore__info
+	&__title
+		@extend .explore__title
+	&__sub
+		*
+			display: inline-block
+			margin-left: 32px
+			&:nth-of-type(1)
+				margin-left: 0
+	&__city
+		svg
+			width: 12px
+			height: 20px
+			+pr
+			top: 4px
+			margin-right: 9px
+	&__people
+		svg
+			width: 23px
+			height: 14px
+
+.footer
+	padding: 60px 0
+	background: #404040
+	color: $w
+	+pr
+	+r(769)
+		text-align: center
+	&:before
+		+c
+		+pa
+		height: 6px
+		top: 0
+		left: 0
+		width: 100%
+		background-image: url('../images/footer-stripe.jpg')
+		background-repeat: repeat-x
+	a
+		color: $w
+	&__title
+		display: inline-block
+		margin-bottom: 10px
+		text-transform: uppercase
+		// +lh(40, 14)
+		+lsPX(40, 14)
+		font-size: 14px
+	&__menu
+		li
+			a
+				+lsPX(40, 14)
+				+lh(32, 14)
+				font-size: 14px
+		+r(769)
+			margin-bottom: $margin-item
+	&__form
+		margin-bottom: 36px
+		form
+			+clr
+		input,
+		button
+			outline: none
+			border: 0
+			height: 42px
+			line-height: 42px
+			float: left
+		input
+			padding: 0 13px
+			width: 60%
+			border-radius: 5px 0 0 5px
+			+r(992)
+				width: 100%
+				border-radius: 5px
+				margin-bottom: 5px
+			+r(769)
+				text-align: center
+		button
+			cursor: pointer
+			width: 40%
+			border-radius: 0 5px 5px 0
+			text-transform: uppercase
+			color: $w
+			background: $main
+			+r(992)
+				// width: auto
+				width: 100%
+				padding: 0 10px
+				// +pr
+				// left: 50%
+				// transform: translate(-50%, 0)
+				border-radius: 5px
+			+r(769)
+				margin-bottom: $margin-item
+	&__social
+		+clr
+		li
+			float: left
+			margin-left: 20px
+			&:first-child
+				margin-left: 0
+			a
+				display: block
+				+sq(44)
+				background: #717171
+				+df
+				+cc
+				&:hover
+					background: $main
+				&.facebook
+					svg
+						width: 10px
+						height: 20px
+				&.twitter
+					svg
+						width: 22px
+						height: 17px
+				&.g-plus
+					svg
+						width: 22px
+						height: 14px
